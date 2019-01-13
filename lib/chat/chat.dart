@@ -11,6 +11,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:encrypt/encrypt.dart';
 
 class Chat extends StatelessWidget {
   final String peerId;
@@ -70,6 +71,10 @@ class ChatScreenState extends State<ChatScreen> {
   final ScrollController listScrollController = new ScrollController();
   final FocusNode focusNode = new FocusNode();
 
+  static String key = 'my32lengthsupersecretnooneknows1';
+
+  final encrypter = Encrypter(AES(key));
+
   @override
   void initState() {
     super.initState();
@@ -78,7 +83,7 @@ class ChatScreenState extends State<ChatScreen> {
     peerAvatar = widget.peerAvatar;
     print('peerAvatar $peerAvatar');
     groupChatId = '';
-
+    
     isLoading = false;
     isShowSticker = false;
     imageUrl = '';
@@ -173,7 +178,7 @@ class ChatScreenState extends State<ChatScreen> {
             'idFrom': id,
             'idTo': peerId,
             'timestamp': DateTime.now().millisecondsSinceEpoch,
-            'content': content,
+            'content': encrypter.encrypt(content),
             'type': type
           },
         );
@@ -194,7 +199,7 @@ class ChatScreenState extends State<ChatScreen> {
               // Text
               ? Container(
                   child: Text(
-                    document['content'],
+                    encrypter.decrypt(document['content']),
                     style: TextStyle(color: primaryColor),
                   ),
                   padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
@@ -233,7 +238,7 @@ class ChatScreenState extends State<ChatScreen> {
                             ),
                             clipBehavior: Clip.hardEdge,
                           ),
-                          imageUrl: document['content'],
+                          imageUrl: encrypter.decrypt(document['content']),
                           width: 200.0,
                           height: 200.0,
                           fit: BoxFit.cover,
@@ -246,7 +251,7 @@ class ChatScreenState extends State<ChatScreen> {
                   // Sticker
                   : Container(
                       child: new Image.asset(
-                        'assets/images/${document['content']}.gif',
+                        'assets/images/${encrypter.decrypt(document['content'])}.gif',
                         width: 100.0,
                         height: 100.0,
                         fit: BoxFit.cover,
@@ -289,7 +294,7 @@ class ChatScreenState extends State<ChatScreen> {
                 document['type'] == 0
                     ? Container(
                         child: Text(
-                          document['content'],
+                          encrypter.decrypt(document['content']),
                           style: TextStyle(color: Colors.white),
                         ),
                         padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
@@ -327,7 +332,7 @@ class ChatScreenState extends State<ChatScreen> {
                                   ),
                                   clipBehavior: Clip.hardEdge,
                                 ),
-                                imageUrl: document['content'],
+                                imageUrl: encrypter.decrypt(document['content']),
                                 width: 200.0,
                                 height: 200.0,
                                 fit: BoxFit.cover,
@@ -339,7 +344,7 @@ class ChatScreenState extends State<ChatScreen> {
                           )
                         : Container(
                             child: new Image.asset(
-                              'assets/images/${document['content']}.gif',
+                              'assets/images/${encrypter.decrypt(document['content'])}.gif',
                               width: 100.0,
                               height: 100.0,
                               fit: BoxFit.cover,
@@ -535,13 +540,13 @@ class ChatScreenState extends State<ChatScreen> {
   Widget buildLoading() {
     return Positioned(
       child: isLoading
-          ? Container(
-              child: Center(
-                child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(themeColor)),
-              ),
-              color: Colors.white.withOpacity(0.8),
-            )
-          : Container(),
+        ? Container(
+            child: Center(
+              child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(themeColor)),
+            ),
+            color: Colors.white.withOpacity(0.8),
+          )
+        : Container(),
     );
   }
 

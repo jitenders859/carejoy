@@ -1,0 +1,699 @@
+{
+  "@@last_modified": "2019-01-11T14:31:17.222363",
+  "addNewChild": "Add New Child",
+  "@addNewChild": {
+    "description": "Title for Creating Child",
+    "type": "text",
+    "placeholders": {}
+  },
+  "firstName": "First Name",
+  "@firstName": {
+    "description": "First Name",
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastName": "Last Name",
+  "@lastName": {
+    "description": "Last Name",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enter": "Enter",
+  "@enter": {
+    "description": "Enter",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dateOfBirth": "Date Of Birth",
+  "@dateOfBirth": {
+    "description": "Date Of Birth",
+    "type": "text",
+    "placeholders": {}
+  },
+  "presence": "Presence",
+  "@presence": {
+    "description": "Presence",
+    "type": "text",
+    "placeholders": {}
+  },
+  "mon": "Mon",
+  "@mon": {
+    "description": "Monday",
+    "type": "text",
+    "placeholders": {}
+  },
+  "tues": "Tues",
+  "@tues": {
+    "description": "Tuesday",
+    "type": "text",
+    "placeholders": {}
+  },
+  "weds": "Weds",
+  "@weds": {
+    "description": "Wednesday",
+    "type": "text",
+    "placeholders": {}
+  },
+  "thurs": "Thurs",
+  "@thurs": {
+    "description": "Thursday",
+    "type": "text",
+    "placeholders": {}
+  },
+  "fri": "Fri",
+  "@fri": {
+    "description": "Friday",
+    "type": "text",
+    "placeholders": {}
+  },
+  "sat": "Sat",
+  "@sat": {
+    "description": "Saturday",
+    "type": "text",
+    "placeholders": {}
+  },
+  "complimentaryInformation": "Complementary Information",
+  "@complimentaryInformation": {
+    "description": "Complementary Information",
+    "type": "text",
+    "placeholders": {}
+  },
+  "otherInformation": "Other Information",
+  "@otherInformation": {
+    "description": "Other Information",
+    "type": "text",
+    "placeholders": {}
+  },
+  "save": "SAVE",
+  "@save": {
+    "description": "SAVE",
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectAField": "Select a Field",
+  "@selectAField": {
+    "description": "Select a field",
+    "type": "text",
+    "placeholders": {}
+  },
+  "education": "Education",
+  "@education": {
+    "description": "First ",
+    "type": "text",
+    "placeholders": {}
+  },
+  "engineering": "Engineering",
+  "@engineering": {
+    "description": "Engineering",
+    "type": "text",
+    "placeholders": {}
+  },
+  "biology": "Biology",
+  "@biology": {
+    "description": "Biology",
+    "type": "text",
+    "placeholders": {}
+  },
+  "food": "Food",
+  "@food": {
+    "description": "Food",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayCare": "DayCare",
+  "@dayCare": {
+    "description": "DayCare",
+    "type": "text",
+    "placeholders": {}
+  },
+  "member": "Member",
+  "@member": {
+    "description": "Member",
+    "type": "text",
+    "placeholders": {}
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email",
+    "type": "text",
+    "placeholders": {}
+  },
+  "create": "Create",
+  "@create": {
+    "description": "Create",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pin": "pin",
+  "@pin": {
+    "description": "Pin",
+    "type": "text",
+    "placeholders": {}
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home",
+    "type": "text",
+    "placeholders": {}
+  },
+  "arrive": "Arrive",
+  "@arrive": {
+    "description": "Arrive",
+    "type": "text",
+    "placeholders": {}
+  },
+  "diaper": "Diaper",
+  "@diaper": {
+    "description": "Diaper",
+    "type": "text",
+    "placeholders": {}
+  },
+  "play": "Play",
+  "@play": {
+    "description": "Play",
+    "type": "text",
+    "placeholders": {}
+  },
+  "sleep": "Sleep",
+  "@sleep": {
+    "description": "Sleep",
+    "type": "text",
+    "placeholders": {}
+  },
+  "care": "Care",
+  "@care": {
+    "description": "Care",
+    "type": "text",
+    "placeholders": {}
+  },
+  "leave": "Leave",
+  "@leave": {
+    "description": "Leave",
+    "type": "text",
+    "placeholders": {}
+  },
+  "add": "Add",
+  "@add": {
+    "description": "Add",
+    "type": "text",
+    "placeholders": {}
+  },
+  "photo": "Photo",
+  "@photo": {
+    "description": "Photo",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notify": "Notify",
+  "@notify": {
+    "description": "notify",
+    "type": "text",
+    "placeholders": {}
+  },
+  "comment": "Comment",
+  "@comment": {
+    "description": "Comment",
+    "type": "text",
+    "placeholders": {}
+  },
+  "share": "Share",
+  "@share": {
+    "description": "Share",
+    "type": "text",
+    "placeholders": {}
+  },
+  "milk": "Milk",
+  "@milk": {
+    "description": "Milk",
+    "type": "text",
+    "placeholders": {}
+  },
+  "ml": "ml",
+  "@ml": {
+    "description": "ml",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beCareful": "Be Careful",
+  "@beCareful": {
+    "description": "Be Careful",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reading": "Reading",
+  "@reading": {
+    "description": "Reading",
+    "type": "text",
+    "placeholders": {}
+  },
+  "painting": "Painting",
+  "@painting": {
+    "description": "Painting",
+    "type": "text",
+    "placeholders": {}
+  },
+  "singing": "Singing",
+  "@singing": {
+    "description": "Singing",
+    "type": "text",
+    "placeholders": {}
+  },
+  "jumping": "Jumping",
+  "@jumping": {
+    "description": "Jumping",
+    "type": "text",
+    "placeholders": {}
+  },
+  "fever": "Fever",
+  "@fever": {
+    "description": "Fever",
+    "type": "text",
+    "placeholders": {}
+  },
+  "earPain": "Ear Pain",
+  "@earPain": {
+    "description": "Ear Pain",
+    "type": "text",
+    "placeholders": {}
+  },
+  "crying": "Crying",
+  "@crying": {
+    "description": "Crying",
+    "type": "text",
+    "placeholders": {}
+  },
+  "runnyNose": "Runny Nose",
+  "@runnyNose": {
+    "description": "Runny Nose",
+    "type": "text",
+    "placeholders": {}
+  },
+  "vomiting": "Vomiting",
+  "@vomiting": {
+    "description": "Vomiting",
+    "type": "text",
+    "placeholders": {}
+  },
+  "toothache": "Toothache",
+  "@toothache": {
+    "description": "Toothache",
+    "type": "text",
+    "placeholders": {}
+  },
+  "eyeCleaning": "Eye Cleaning",
+  "@eyeCleaning": {
+    "description": "Eye Cleaning",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noseCleaning": "Nose Cleaning",
+  "@noseCleaning": {
+    "description": "Nose Cleaning",
+    "type": "text",
+    "placeholders": {}
+  },
+  "moisturizer": "Moisturizer",
+  "@moisturizer": {
+    "description": "Moisturizer",
+    "type": "text",
+    "placeholders": {}
+  },
+  "other": "Other",
+  "@other": {
+    "description": "Other",
+    "type": "text",
+    "placeholders": {}
+  },
+  "paracetamol": "Paracetamol",
+  "@paracetamol": {
+    "description": "Paracetamol",
+    "type": "text",
+    "placeholders": {}
+  },
+  "earDrops": "Ear Drops",
+  "@earDrops": {
+    "description": "Ear Drops",
+    "type": "text",
+    "placeholders": {}
+  },
+  "eyeDrops": "Eye Drops",
+  "@eyeDrops": {
+    "description": "Eye Drops",
+    "type": "text",
+    "placeholders": {}
+  },
+  "children": "Children",
+  "@children": {
+    "description": "Children",
+    "type": "text",
+    "placeholders": {}
+  },
+  "staff": "Staff",
+  "@staff": {
+    "description": "Staff",
+    "type": "text",
+    "placeholders": {}
+  },
+  "login": "Login",
+  "@login": {
+    "description": "Login",
+    "type": "text",
+    "placeholders": {}
+  },
+  "account": "Account",
+  "@account": {
+    "description": "Account",
+    "type": "text",
+    "placeholders": {}
+  },
+  "event": "Event",
+  "@event": {
+    "description": "Event",
+    "type": "text",
+    "placeholders": {}
+  },
+  "welcome": "Welcome",
+  "@welcome": {
+    "description": "Welcome",
+    "type": "text",
+    "placeholders": {}
+  },
+  "back": "Back",
+  "@back": {
+    "description": "Back",
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkIn": "Check-In",
+  "@checkIn": {
+    "description": "Check-In",
+    "type": "text",
+    "placeholders": {}
+  },
+  "please": "Please",
+  "@please": {
+    "description": "Please",
+    "type": "text",
+    "placeholders": {}
+  },
+  "parent": "Parent",
+  "@parent": {
+    "description": "Parent",
+    "type": "text",
+    "placeholders": {}
+  },
+  "nurse": "Nurse",
+  "@nurse": {
+    "description": "Nurse",
+    "type": "text",
+    "placeholders": {}
+  },
+  "address": "Address",
+  "@address": {
+    "description": "Address",
+    "type": "text",
+    "placeholders": {}
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password",
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dOBError": "Date of Birth must not be empty.",
+  "@dOBError": {
+    "description": "Date of Birth must not be empty.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastNameError": "Last name must not be empty.",
+  "@lastNameError": {
+    "description": "Last Name Error.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "firstNameError": "First name must not be empty.",
+  "@firstNameError": {
+    "description": "Confirm",
+    "type": "text",
+    "placeholders": {}
+  },
+  "imageFieldError": "Image Field must not be empty",
+  "@imageFieldError": {
+    "description": "Image Field Must not be empty",
+    "type": "text",
+    "placeholders": {}
+  },
+  "childSuccessfullyAdded": "Child Successfull added.",
+  "@childSuccessfullyAdded": {
+    "description": "Child Successfull added.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pinError": "Pin Must Be of 6 Characters and Numeric.",
+  "@pinError": {
+    "description": "Pin Must Be of 6 Characters and Numeric.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "emailError": "Email must not be empty and should be proper.",
+  "@emailError": {
+    "description": "Email must not be empty and should be proper.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "qualification": "Qualification",
+  "@qualification": {
+    "description": "Qualification",
+    "type": "text",
+    "placeholders": {}
+  },
+  "someErrorOccured": "\"Some Error Occured Try Again.",
+  "@someErrorOccured": {
+    "description": "\"Some Error Occured Try Again.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "memberEmailAlreadyExist": "Member with this email Already Exist.",
+  "@memberEmailAlreadyExist": {
+    "description": "Member with this email Already Exist.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "memberSuccessfullyCreated": "Staff Member Successfully Created.",
+  "@memberSuccessfullyCreated": {
+    "description": "Staff Member Successfully Created.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "change": "Change",
+  "@change": {
+    "description": "Change",
+    "type": "text",
+    "placeholders": {}
+  },
+  "vitamin": "Vitamin",
+  "@vitamin": {
+    "description": "Vitamin",
+    "type": "text",
+    "placeholders": {}
+  },
+  "passwordNotMatch": "Password Doesn't Match!",
+  "@passwordNotMatch": {
+    "description": "Password Doesn't Match!",
+    "type": "text",
+    "placeholders": {}
+  },
+  "submit": "Submit",
+  "@submit": {
+    "description": "Submit",
+    "type": "text",
+    "placeholders": {}
+  },
+  "am": "AM",
+  "@am": {
+    "description": "Am",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pm": "PM",
+  "@pm": {
+    "description": "Pm",
+    "type": "text",
+    "placeholders": {}
+  },
+  "morning": "Morning",
+  "@morning": {
+    "description": "Morning",
+    "type": "text",
+    "placeholders": {}
+  },
+  "evening": "Evening",
+  "@evening": {
+    "description": "Evening",
+    "type": "text",
+    "placeholders": {}
+  },
+  "transmissions": "Transmissions",
+  "@transmissions": {
+    "description": "Transmissions",
+    "type": "text",
+    "placeholders": {}
+  },
+  "child": "Child",
+  "@child": {
+    "description": "Child",
+    "type": "text",
+    "placeholders": {}
+  },
+  "day": "Day",
+  "@day": {
+    "description": "Day",
+    "type": "text",
+    "placeholders": {}
+  },
+  "week": "Week",
+  "@week": {
+    "description": "week",
+    "type": "text",
+    "placeholders": {}
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Profile",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noData": "No Data",
+  "@noData": {
+    "description": "No Data",
+    "type": "text",
+    "placeholders": {}
+  },
+  "logOut": "Log Out",
+  "@logOut": {
+    "description": "Log Out",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pinAlreadyTaken": "Pin Already Taken.",
+  "@pinAlreadyTaken": {
+    "description": "Pin Already Taken.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "yourPasswordIsIncorrect": "Your Password is Incorrect.",
+  "@yourPasswordIsIncorrect": {
+    "description": "Your Password is Incorrect.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pleaseSelectAChild": "Please Select a Child.",
+  "@pleaseSelectAChild": {
+    "description": "Please Select a Child.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "info": "Info",
+  "@info": {
+    "description": "Info",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dontHaveAnAccount": "Don't have an Account?",
+  "@dontHaveAnAccount": {
+    "description": "Dont have an Account?",
+    "type": "text",
+    "placeholders": {}
+  },
+  "someErrorOccuredNow": "Some Error Occured",
+  "@someErrorOccuredNow": {
+    "description": "Some Error Occured",
+    "type": "text",
+    "placeholders": {}
+  },
+  "a": "a",
+  "@a": {
+    "description": "a",
+    "type": "text",
+    "placeholders": {}
+  },
+  "loginWithEmailAndPassword": "Login with Email and Password.",
+  "@loginWithEmailAndPassword": {
+    "description": "Login with Email and Password.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "yes": "Yes",
+  "@yes": {
+    "description": "Yes",
+    "type": "text",
+    "placeholders": {}
+  },
+  "no": "No",
+  "@no": {
+    "description": "no",
+    "type": "text",
+    "placeholders": {}
+  },
+  "charWith": "with",
+  "@charWith": {
+    "description": "With",
+    "type": "text",
+    "placeholders": {}
+  },
+  "doYouReallyWantToExit": "Do you really want to exit.",
+  "@doYouReallyWantToExit": {
+    "description": "Do you really want to exit.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "or": "or",
+  "@or": {
+    "description": "or",
+    "type": "text",
+    "placeholders": {}
+  },
+  "emailAlreadyExist": "Email Already Exist",
+  "@emailAlreadyExist": {
+    "description": "Email Already Exist.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "exist": "Exist",
+  "@exist": {
+    "description": "Exist",
+    "type": "text",
+    "placeholders": {}
+  },
+  "already": "Already",
+  "@already": {
+    "description": "Already",
+    "type": "text",
+    "placeholders": {}
+  },
+  "taken": "Taken",
+  "@taken": {
+    "description": "Taken",
+    "type": "text",
+    "placeholders": {}
+  },
+  "required": "Required",
+  "@required": {
+    "description": "Required",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pinDoesntMatch": "Pin Doesn't Match",
+  "@pinDoesntMatch": {
+    "description": "pin Does not match",
+    "type": "text",
+    "placeholders": {}
+  }
+}

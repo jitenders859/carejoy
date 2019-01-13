@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carejoy/tools/app_tools.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:encrypt/encrypt.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:carejoy/chat/const.dart';
@@ -68,6 +69,10 @@ class GroupChatScreenState extends State<GroupChatScreen> {
   final TextEditingController textEditingController = new TextEditingController();
   final ScrollController listScrollController = new ScrollController();
   final FocusNode focusNode = new FocusNode();
+
+  static String key = 'my32lengthsupersecretnooneknows1';
+
+  final encrypter = Encrypter(AES(key));
 
   @override
   void initState() {
@@ -185,7 +190,7 @@ class GroupChatScreenState extends State<GroupChatScreen> {
             'idFrom': id,
             'idTo': peerId[i],
             'timestamp': DateTime.now().millisecondsSinceEpoch,
-            'content': content,
+            'content': encrypter.encrypt(content),
             'type': type
           },
         );
@@ -208,7 +213,7 @@ class GroupChatScreenState extends State<GroupChatScreen> {
               // Text
             ? Container(
                 child: Text(
-                  document['content'],
+                  encrypter.decrypt(document['content']),
                   style: TextStyle(color: primaryColor),
                 ),
                 padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
@@ -247,7 +252,7 @@ class GroupChatScreenState extends State<GroupChatScreen> {
                           ),
                           clipBehavior: Clip.hardEdge,
                         ),
-                        imageUrl: document['content'],
+                        imageUrl: encrypter.decrypt(document['content']),
                         width: 200.0,
                         height: 200.0,
                         fit: BoxFit.cover,
@@ -260,7 +265,7 @@ class GroupChatScreenState extends State<GroupChatScreen> {
                 // Sticker
                 : Container(
                     child: new Image.asset(
-                      'assets/images/${document['content']}.gif',
+                      'assets/images/${encrypter.decrypt(document['content'])}.gif',
                       width: 100.0,
                       height: 100.0,
                       fit: BoxFit.cover,
@@ -303,7 +308,7 @@ class GroupChatScreenState extends State<GroupChatScreen> {
                 document['type'] == 0
                     ? Container(
                         child: Text(
-                          document['content'],
+                          encrypter.decrypt(document['content']),
                           style: TextStyle(color: Colors.white),
                         ),
                         padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
@@ -341,7 +346,7 @@ class GroupChatScreenState extends State<GroupChatScreen> {
                                   ),
                                   clipBehavior: Clip.hardEdge,
                                 ),
-                                imageUrl: document['content'],
+                                imageUrl: encrypter.decrypt(document['content']),
                                 width: 200.0,
                                 height: 200.0,
                                 fit: BoxFit.cover,
@@ -353,7 +358,7 @@ class GroupChatScreenState extends State<GroupChatScreen> {
                           )
                         : Container(
                             child: new Image.asset(
-                              'assets/images/${document['content']}.gif',
+                              'assets/images/${encrypter.decrypt(document['content'])}.gif',
                               width: 100.0,
                               height: 100.0,
                               fit: BoxFit.cover,
