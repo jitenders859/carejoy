@@ -1,11 +1,7 @@
 # carejoy
 
-A new Flutter project.
+## Flutter DayCare App
 
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
 
 <img src="https://user-images.githubusercontent.com/41188075/51089703-96433c00-1797-11e9-9a8d-07dff1a84724.png" width="33%"><img src="https://user-images.githubusercontent.com/41188075/51089704-97746900-1797-11e9-91d8-d8018d2e9649.png" width="33%"><img src="https://user-images.githubusercontent.com/41188075/51089705-9b07f000-1797-11e9-9b67-688234cfd3ef.png" width="33%">
 
